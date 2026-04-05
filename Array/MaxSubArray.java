@@ -1,19 +1,24 @@
 import java.util.Scanner;
 
 public class MaxSubArray {
-         public static void kadanes(int arr[]){
-            int ms = Integer.MIN_VALUE;
-            int cs = 0;
-            for(int i =0;i<arr.length;i++){
-                cs = cs + arr[i];
-                if(cs <0){
-                    cs =0;
-                }
-                ms = Math.max(cs,ms);
-            }
-            System.out.println("Max Sub Array is: "+ms);
-         }
-        public static void main(String[] args){
+    public static void kadanes(int arr[]) {
+        if (arr.length == 0) {
+            System.out.println("Array is empty.");
+            return;
+        }
+
+        int cs = arr[0];
+        int ms = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            cs = Math.max(arr[i], cs + arr[i]);
+            ms = Math.max(ms, cs);
+        }
+
+        System.out.println("Max Sub Array is: " + ms);
+    }
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); 
         System.out.print("Enter the size of the array: ");
         int n = sc.nextInt();
@@ -26,6 +31,5 @@ public class MaxSubArray {
         }
         kadanes(arr);
 
-        
     }
 }
