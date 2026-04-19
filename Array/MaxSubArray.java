@@ -8,7 +8,7 @@ public class MaxSubArray {
         }
 
         int cs = arr[0];
-        int ms = arr[0];
+        int ms = Integer.MIN_VALUE;
 
         for (int i = 1; i < arr.length; i++) {
             cs = Math.max(arr[i], cs + arr[i]);
