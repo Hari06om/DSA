@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // import java.util.Scanner;
 
 // public class Square {
@@ -18,6 +19,8 @@
 
 
 // do this using function and also add the option to print hollow square pattern.
+=======
+>>>>>>> Revision
 import java.util.Scanner;
 
 public class Square {
@@ -25,6 +28,7 @@ public class Square {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number to find the square: ");
         int a = sc.nextInt();
+<<<<<<< HEAD
         printSquare(a);
     }
 
@@ -36,9 +40,17 @@ public class Square {
                 } else {
                     System.out.print("  ");
                 }
+=======
+        for(int i =0;i<a;i++){
+            for(int j=0;j<a;j++){
+                System.out.print("* ");
+>>>>>>> Revision
             }
             System.out.println();
         }
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Revision
