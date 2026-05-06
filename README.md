@@ -32,6 +32,9 @@ This repository is my personal DSA preparation and learning journey. It contains
 
 ### 🔶 Algorithms
 
+
+
+
 | # | Topic | Status |
 |---|-------|--------|
 | 1 | Sorting (Bubble, Merge, Quick, Heap, etc.) | ✅ Done |
@@ -60,6 +63,8 @@ This repository is my personal DSA preparation and learning journey. It contains
 | Heap Sort | O(n log n) | O(n log n) | O(n log n) | O(1) |
 
 ### Graph Algorithm Complexities
+
+
 
 | Algorithm | Time | Space | Use Case |
 |-----------|------|-------|----------|
